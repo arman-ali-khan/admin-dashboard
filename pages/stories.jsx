@@ -7,13 +7,13 @@ function stories() {
     const router = useRouter()
     // handle redirect 
     const handleRedirect = () =>{
-       return router.push('/edit/user/12')
+       return router.push('/edit/story/12')
     }
   return (
     <AdminLayout title={"Manager Stories"}>
       {/* Users */}
       <Card className={`w-full p-4`}>
-        <h2 className="font-bold">Manage Users</h2>
+        <h2 className="font-bold">Manage Stories</h2>
         <div className="overflow-x-auto">
           <table className="table">
             {/* head */}

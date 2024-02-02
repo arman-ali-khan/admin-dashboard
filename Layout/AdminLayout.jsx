@@ -49,7 +49,7 @@ function AdminLayout({ children, title }) {
               <Link href={`/blogs`}>Blogs</Link>
             </li>
             <li>
-              <Link href={`/reports`}>Reports</Link>
+              <Link href={`/reports`}> <span className="indicator w-full inline-block">Reports   <span className="indicator-item badge badge-warning badge-sm">9+</span> </span> </Link>
             </li>
             <li>
               <Link href={`/reviews`}>Reviews</Link>
