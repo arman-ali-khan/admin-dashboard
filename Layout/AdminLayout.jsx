@@ -1,7 +1,11 @@
+'use client';
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Header/Navbar";
 import { Jost } from "next/font/google";
 import Head from "next/head";
+import Link from "next/link";
+import { useRouter } from 'next/router';
+
 const font = Jost({
   weight: ['400', '700'],
   style: ['normal', 'italic'],
@@ -9,6 +13,8 @@ const font = Jost({
   display: 'swap',
 })
 function AdminLayout({ children, title }) {
+  const router = useRouter();
+  
   return (
     <section className={`w-full sticky top-0 left-0 ${font.className}`}>
       <Head>
@@ -31,31 +37,31 @@ function AdminLayout({ children, title }) {
           <ul className="menu fixed top-0 mt-16 p-4 w-64 min-h-full bg-base-100 text-base-content">
             {/* Sidebar content here */}
             <li>
-              <a href={"/"}>Dashboard</a>
+            <Link href={`/`}>Dashboard</Link>
             </li>
             <li>
-              <a href={"/users"}>Users</a>
+              <Link href={`/users`}>Users</Link>
             </li>
             <li>
-              <a href={"/stories"}>Stories</a>
+              <Link href={`/stories`}>Stories</Link>
             </li>
             <li>
-              <a href={"/blogs"}>Blogs</a>
+              <Link href={`/blogs`}>Blogs</Link>
             </li>
             <li>
-              <a href={"/reports"}>Reports</a>
+              <Link href={`/reports`}>Reports</Link>
             </li>
             <li>
-              <a href={"/reviews"}>Reviews</a>
+              <Link href={`/reviews`}>Reviews</Link>
             </li>
             <li>
-              <a href={"/notices"}>Notices</a>
+              <Link href={`/notices`}>Notices</Link>
             </li>
             <li>
-              <a href={"/ads"}>Ads</a>
+              <Link href={`/ads`}>Ads</Link>
             </li>
             <li>
-              <a href={"/settings"}>Settings</a>
+              <Link href={`/settings`}>Settings</Link>
             </li>
           </ul>
         </div>

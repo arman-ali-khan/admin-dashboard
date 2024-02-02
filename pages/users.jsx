@@ -1,8 +1,14 @@
 import AdminLayout from "@/Layout/AdminLayout";
 import Card from "@/components/Sections/Card";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 function user() {
+    const router = useRouter()
+    // handle redirect 
+    const handleRedirect = () =>{
+       return router.push('/edit/user/12')
+    }
   return (
     <AdminLayout title={"Manager Users"}>
       {/* Users */}
@@ -15,7 +21,10 @@ function user() {
               <tr>
                 <th>ID</th>
                 <th>Author</th>
-                <th>Story</th>
+                <th>Stories</th>
+                <th>Followers</th>
+                <th>Following</th>
+                <th>Type</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -26,13 +35,22 @@ function user() {
                   <tr key={i}>
                     <th>{i + 1}</th>
                     <td className="truncate">
-                      <Link href={`/`}>User Name</Link>
+                      <Link href={`/`}>লেখকের নাম</Link>
                     </td>
                     <td className="truncate max-w-44">
-                      আমার সোনার বাংলা আমি তোমায় ভালোবাসি চিরদিন তোমার আকাশ ।
+                      12
+                    </td>
+                    <td className="truncate max-w-44">
+                      12
+                    </td>
+                    <td className="truncate max-w-44">
+                      12
+                    </td>
+                    <td className="truncate max-w-44">
+                      লেখক
                     </td>
                     <td className="w-44">
-                      <button className="btn btn-sm bg-teal-100 text-teal-600 rounded">
+                      <button onClick={handleRedirect} className="btn btn-sm bg-teal-100 text-teal-600 rounded">
                         Edit
                       </button>
                       <button className="btn btn-sm bg-red-100 text-red-600 rounded">
