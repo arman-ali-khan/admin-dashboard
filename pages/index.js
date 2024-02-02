@@ -2,6 +2,9 @@ import AdminLayout from "@/Layout/AdminLayout";
 import Card from "@/components/Sections/Card";
 import ChartRevenue from "@/components/Sections/ChartRevenue";
 import PieChart from "@/components/Sections/Dashboard/PieChart";
+import Stories from "@/components/Sections/Stories";
+import Users from "@/components/Sections/Users";
+import Views from "@/components/Sections/Views";
 import { FaRegUser } from "react-icons/fa";
 import { IoIosTrendingUp } from "react-icons/io";
 
@@ -99,13 +102,12 @@ export default function Home() {
         <PieChart />
       </div>
      </section>
-     {/* Tables */}
-     <section>
-      {/* Stories */}
-      <div></div>
-      {/* Users */}
-      <div></div>
-     </section>
+     {/* Stories */}
+    <Stories />
+    {/* Users */}
+    <Users />
+    {/* Views */}
+    <Views />
     </AdminLayout>
   );
 }

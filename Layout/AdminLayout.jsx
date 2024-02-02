@@ -2,7 +2,6 @@ import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Header/Navbar";
 import { Jost } from "next/font/google";
 import Head from "next/head";
-import Link from "next/link";
 const font = Jost({
   weight: ['400', '700'],
   style: ['normal', 'italic'],
@@ -32,10 +31,31 @@ function AdminLayout({ children, title }) {
           <ul className="menu fixed top-0 mt-16 p-4 w-64 min-h-full bg-base-200 text-base-content">
             {/* Sidebar content here */}
             <li>
-              <Link href={"/"}>Dashboard</Link>
+              <a href={"/"}>Dashboard</a>
             </li>
             <li>
-              <Link href={"/users"}>Users</Link>
+              <a href={"/users"}>Users</a>
+            </li>
+            <li>
+              <a href={"/stories"}>Stories</a>
+            </li>
+            <li>
+              <a href={"/blogs"}>Blogs</a>
+            </li>
+            <li>
+              <a href={"/reports"}>Reports</a>
+            </li>
+            <li>
+              <a href={"/reviews"}>Reviews</a>
+            </li>
+            <li>
+              <a href={"/notices"}>Notices</a>
+            </li>
+            <li>
+              <a href={"/ads"}>Ads</a>
+            </li>
+            <li>
+              <a href={"/settings"}>Settings</a>
             </li>
           </ul>
         </div>
