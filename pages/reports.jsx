@@ -46,9 +46,16 @@ function blogs() {
                       3
                     </td>
                     <td className="w-44">
-                      <button onClick={handleRedirect} className="btn btn-sm bg-teal-100 text-teal-600 rounded">
-                        Edit
-                      </button>
+                     
+                      <div className="dropdown dropdown-end">
+  <div tabIndex={0} role="button" className="btn btn-sm bg-orange-100 text-orange-600 rounded">Action</div>
+  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+    <li><button className="bg-yellow-100 text-yellow-600 my-1">Warn Author</button></li>
+    <li><button className="bg-orange-100 text-orange-600 my-1">Hide And Warn</button></li>
+    <li><button className="bg-rose-100 text-rose-600 my-1">Archive And Warn</button></li>
+    <li><button className="bg-red-100 text-red-600 my-1">Delete And Delete Report</button></li>
+  </ul>
+</div>
                       <button className="btn btn-sm bg-red-100 text-red-600 rounded">
                         Delete
                       </button>
