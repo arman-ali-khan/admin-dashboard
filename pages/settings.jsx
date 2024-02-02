@@ -1,8 +1,10 @@
+import AdminLayout from "@/Layout/AdminLayout";
+
 function settings() {
     return (
-        <div>
+        <AdminLayout title={'Manage Settings'}>
             Enter
-        </div>
+        </AdminLayout>
     );
 }
 

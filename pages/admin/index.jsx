@@ -1,11 +1,11 @@
 import AdminLayout from "@/Layout/AdminLayout";
 
-function stories() {
+function index() {
     return (
-        <AdminLayout title={'Manage Stories'}>
+        <AdminLayout title={'Manage Account'}>
             Enter
         </AdminLayout>
     );
 }
 
-export default stories;
+export default index;

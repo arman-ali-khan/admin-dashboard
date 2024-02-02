@@ -1,8 +1,10 @@
+import AdminLayout from "@/Layout/AdminLayout";
+
 function reviews() {
     return (
-        <div>
+        <AdminLayout title={'Manage Reviews'}>
             Enter
-        </div>
+        </AdminLayout>
     );
 }
 

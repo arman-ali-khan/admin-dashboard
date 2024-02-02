@@ -1,8 +1,10 @@
+import AdminLayout from "@/Layout/AdminLayout";
+
 function reports() {
     return (
-        <div>
+        <AdminLayout title={'Manage Reports'}>
             Enter
-        </div>
+        </AdminLayout>
     );
 }
 

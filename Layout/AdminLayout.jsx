@@ -28,7 +28,7 @@ function AdminLayout({ children, title }) {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className="menu fixed top-0 mt-16 p-4 w-64 min-h-full bg-base-200 text-base-content">
+          <ul className="menu fixed top-0 mt-16 p-4 w-64 min-h-full bg-base-100 text-base-content">
             {/* Sidebar content here */}
             <li>
               <a href={"/"}>Dashboard</a>

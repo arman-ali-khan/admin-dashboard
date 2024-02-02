@@ -27,7 +27,7 @@ function ChartRevenue() {
           </div>
            </section>
            {/* Chart */}
-           <section className="w-full flex relative h-full text-black">
+           <section className="w-full relative h-full text-black grid grid-cols-1">
            <LineChartComponent />
            </section>
         </Card>

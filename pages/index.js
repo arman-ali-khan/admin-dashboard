@@ -4,9 +4,9 @@ import ChartRevenue from "@/components/Sections/ChartRevenue";
 import PieChart from "@/components/Sections/Dashboard/PieChart";
 import Stories from "@/components/Sections/Stories";
 import Users from "@/components/Sections/Users";
-import Views from "@/components/Sections/Views";
-import { FaRegUser } from "react-icons/fa";
+import { FaEye, FaRegUser, FaStar } from "react-icons/fa";
 import { IoIosTrendingUp } from "react-icons/io";
+import { RiMenu2Line } from "react-icons/ri";
 
 
 export default function Home() {
@@ -14,11 +14,11 @@ export default function Home() {
     <AdminLayout title={"Admin Dashboard"}>
       {/* admin cards */}
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
-        {/* Users Card */}
+        {/* Stories Card */}
         <Card className={"w-full rounded-lg p-2"}>
           <div className="flex items-center w-full justify-between">
             <div className="space-y-1">
-              <h2 className="text-sm m-0 p-0">Total Users</h2>
+              <h2 className="text-sm m-0 p-0">Total Stories</h2>
               <p className="text-2xl m-0 p-0 font-bold">12K</p>
               <p className="flex items-center gap-1 text-xs xl:text-sm">
                 <span className="bg-green-100 text-green-600 rounded-full flex items-center gap-1 px-2 truncate">
@@ -29,11 +29,11 @@ export default function Home() {
               </p>
             </div>
             <div className="rounded-full p-3 absolute right-3 bg-green-100 text-green-500">
-              <FaRegUser size={22} />
+              <RiMenu2Line size={22} />
             </div>
           </div>
         </Card>
-        {/* Stories Card */}
+        {/* Users Card */}
         <Card className={"w-full rounded-lg p-2"}>
           <div className="flex items-center w-full justify-between">
             <div className="space-y-1">
@@ -52,11 +52,11 @@ export default function Home() {
             </div>
           </div>
         </Card>
-        {/* Income Card */}
+        {/* Reviews Card */}
         <Card className={"w-full rounded-lg p-2"}>
           <div className="flex items-center w-full justify-between">
             <div className="space-y-1">
-              <h2 className="text-sm m-0 p-0">Total Users</h2>
+              <h2 className="text-sm m-0 p-0">Total Reviews</h2>
               <p className="text-2xl m-0 p-0 font-bold">12K</p>
               <p className="flex items-center gap-1 text-xs xl:text-sm">
                 <span className="bg-sky-100 text-sky-600 rounded-full flex items-center gap-1 px-2 truncate">
@@ -67,15 +67,15 @@ export default function Home() {
               </p>
             </div>
             <div className="rounded-full p-3 absolute right-3 bg-sky-100 text-sky-500">
-              <FaRegUser size={22} />
+              <FaStar size={22} />
             </div>
           </div>
         </Card>
-        {/* Total View Card */}
+        {/* Total Views Card */}
         <Card className={"w-full rounded-lg p-2"}>
           <div className="flex items-center w-full justify-between">
             <div className="space-y-1">
-              <h2 className="text-sm m-0 p-0">Total Users</h2>
+              <h2 className="text-sm m-0 p-0">Total Views</h2>
               <p className="text-2xl m-0 p-0 font-bold">12K</p>
               <p className="flex items-center gap-1 text-xs xl:text-sm">
                 <span className="bg-indigo-100 text-indigo-600 rounded-full flex items-center gap-1 px-2 truncate">
@@ -86,7 +86,7 @@ export default function Home() {
               </p>
             </div>
             <div className="rounded-full p-3 absolute right-3 bg-indigo-100 text-indigo-500">
-              <FaRegUser size={22} />
+              <FaEye size={22} />
             </div>
           </div>
         </Card>
@@ -107,7 +107,7 @@ export default function Home() {
     {/* Users */}
     <Users />
     {/* Views */}
-    <Views />
+    {/* <Views /> */}
     </AdminLayout>
   );
 }

@@ -17,14 +17,14 @@ export default function LineChartComponent() {
         ],
         datasets: [
           {
-            label: new Date().getFullYear(),
+            label: 'Revenue',
             backgroundColor: "#3182ce",
             borderColor: "#3182ce",
             data: [65, 78, 66, 44, 56, 67, 75],
             fill: false,
           },
           {
-            label: new Date().getFullYear() - 1,
+            label: 'Investment',
             fill: false,
             backgroundColor: "#aaa",
             borderColor: "#aaa",
@@ -108,7 +108,7 @@ export default function LineChartComponent() {
   }, []);
   return (
     <>
-      <div className="flex flex-col absolute left-0 break-words w-full">
+      <div className="flex flex-col relative w-full left-0 break-words">
         <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
           {/* <div className="flex flex-wrap items-center">
             <div className="relative w-full max-w-full flex-grow flex-1">

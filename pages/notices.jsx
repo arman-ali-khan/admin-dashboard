@@ -1,8 +1,10 @@
+import AdminLayout from "@/Layout/AdminLayout";
+
 function notices() {
     return (
-        <div>
+        <AdminLayout title={'Manage Notice'}>
             Enter
-        </div>
+        </AdminLayout>
     );
 }
 

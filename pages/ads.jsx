@@ -1,8 +1,10 @@
+import AdminLayout from "@/Layout/AdminLayout";
+
 function ads() {
     return (
-        <div>
+        <AdminLayout title={'Manage Ads'}>
             Enter
-        </div>
+        </AdminLayout>
     );
 }
 
