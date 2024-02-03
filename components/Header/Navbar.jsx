@@ -11,7 +11,7 @@ function Navbar() {
           <RiMenu4Fill size={23} />
         </label>
         {/* Logo */}
-        <a className="btn btn-ghost text-xl">Logo</a>
+        <Link href={`/`} className="btn btn-ghost text-xl">Logo</Link>
       </div>
       <div className="flex-none gap-2">
         {/* Search */}

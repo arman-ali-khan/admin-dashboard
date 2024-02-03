@@ -55,6 +55,9 @@ function AdminLayout({ children, title }) {
               <Link href={`/reviews`}>Reviews</Link>
             </li>
             <li>
+              <Link href={`/pages`}>Pages</Link>
+            </li>
+            <li>
               <Link href={`/notices`}>Notices</Link>
             </li>
             <li>
