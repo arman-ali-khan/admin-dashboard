@@ -15,7 +15,7 @@ export default function PieChart() {
         datasets: [
           {
             label: new Date().getFullYear(),
-            backgroundColor: ["#ef4444", "#10b981", "#f59e0b", "#7c3aed"],
+            backgroundColor: [ "#23c570", "#10b981","#ef4444", "#7c3aed"],
             borderColor: "white",
             data: [78+6+4, 78, 6, 4],
             fill: false,
